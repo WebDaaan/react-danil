@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Noto+Sans+Ethiopic:wght@100&family=Nunito&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,400;0,900;1,300;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./images/background-marcet.png);
+    background-repeat: repeat;
+}
+
+.marcet {
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+
+// Навигация
+.marcet__header {
+    width: 100%;
+    height: 8vw;
+    border: 0.3vw solid red;
+    border-radius: 1.5vw 1.5vw 0vw 1.5vw;
+    background: white;
+}
+
+.marcet__header__navigation {
+    display: flex;
+}
+
+.marcet__header__block {
+    border-radius: 1vw 0 0 1vw;
+    height: 92%;
+    width: 32%;
+    margin: 0;
+    padding: 0;
+    &--text {
+        font-size: 6.4vw;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.2vw;
+        color: red;
+        margin-left: 1vw;
+    }
+}
+
+.marcet__header__search {
+    width: 60%;
+    height: 80%;
+    position: relative;
+    input {
+        border: 0.4vw solid rgb(250, 32, 32);
+        border-radius: 3vw;
+        width: 85%;
+        height: 95%;
+        margin-top: 0.5vw;
+        margin-left: 0.4vw;
+        font-size: 5vw;
+        padding-left: 7vw;
+    }
+    input::placeholder {
+        color: rgb(240, 116, 116);
+    }
+    img {
+        position: absolute;
+        top: 1.6vw;
+        left: 1.5vw;
+        width: 5vw;
+        height: 5vw;
+    }
+    img:active {
+        filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);
+    }
+    &--icon:focus {
+        background: none;
+    }
+}
+
+.marcet__header__basket {
+    width: 8%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.marcet__header__basket {
+    img:active {
+        filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);
+    }
+}
+
+.marcet__body {
+    display: flex;
+}
+
+.marcet__body__vidget {
+    width: 93%;
+    height: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    &__icon {
+        width: 31%;
+        height: 33vw;
+        border: 0.3vw solid rgb(0, 0, 0);
+        border-radius: 4vw;
+        margin: 0.6vw 0.6vw 0.6vw 0.6vw;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.5vw;
+        background: white;
+        &--tovar {
+            width: 101%;
+            height: 28vw;
+            border-bottom: 0.3vw solid black;
+            border-radius: 1vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 90%;
+                height: 80%;
+                justify-content: center;
+                align-items: center;
+                object-fit: cover;
+            }
+        }
+        &--sell {
+            width: 100%;
+            height: 5vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 5vw;
+            text-align: center;
+            color: rgb(200, 11, 11);
+            letter-spacing: 0.2vw;
+        }
+    }
+    .answ {
+        height: 90%;
+    }
+    &__icon:active {
+        box-shadow: 0.5vw 0.3vw 0.3vw gray;
+        border: 0.3vw solid rgb(44, 44, 44);
+    }
+}
+
+.marcet__body__menu {
+    justify-content: end;
+    align-items: end;
+    border: 0.3vw solid red;
+    width: 8%;
+    height: 69vw;
+    border-top: none;
+    border-radius: 0 0 2vw 2vw;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vw;
+    &__category {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        img {
+            width: 90%;
+            height: 55%;
+            object-fit: fill;
+        }
+        img:active {
+            filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);
+        }
+    }
+}
